@@ -25,7 +25,3 @@ def run(*args,**kwargs):
         frappe.publish_progress(100, title='Running KAI Job', description='Working...')
 
 
-
-
-    
-

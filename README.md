@@ -17,7 +17,7 @@ If you are not familiar with these platforms please take a look at the following
 - TASK
 :: Specific assignments completed by agents.
 - TOOL
-:: A tool in is a skill or function that agents can utilize to perform various actions. 
+:: A tool is a skill or function that agents can utilize to perform various actions. 
 - JOB
 :: Set of Inputs given to a crew to be used by agents to produce a result or output.
 
@@ -71,6 +71,36 @@ inputs = { "email": "me@here.com" }
 output = crew.kickoff(inputs=inputs)
 print(output)
 ```
+
+You can also run a crew from a JOB
+
+<img src="img/image2.png" width="500" >
+
+This is the AGENT that answer the question.
+
+<img src="img/image3.png" width="500" >
+
+This was the TASK at hand.
+
+<img src="img/image5.png" width="500" >
+
+Agent decides if it needs to use a tool complete a TASK. Here is a TOOL definition.
+
+<img src="img/image6.png" width="500" >
+
+And here is the CREW that has only one AGENT that worked on the answer.
+
+<img src="img/image4.png" width="500" >
+
+You must have an LLM setup to begin with.
+
+<img src="img/image7.png" width="500" >
+
+Technically you can write these CREWS,AGENTS,TASKS etc. in pure python.
+KAI gives you a way to do it via frappe UI and use them directly from any frappe app or server script.
+
+Let me know what you think!
+
 ### LICENSE
 
 MIT

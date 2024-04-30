@@ -93,6 +93,7 @@ And here is the very simple CREW that has only one AGENT that worked on the answ
 <img src="img/image4.png" width="500" >
 
 You must have an LLM setup to begin with.
+You can setup multiple LLM providers and even assign different LLMs to each AGENT or CREW.
 
 <img src="img/image7.png" width="500" >
 
@@ -101,7 +102,7 @@ KAI gives you a way to do it via frappe UI and use/call them directly from any f
 
 It is possible to add more TOOLS to do much more with Frappe or even ERPNext.
 
-Here is a simple TOOL that checks if a user exists given an email address.
+Here is a simple TOOL that checks if a user exists if given an email address.
 
 <img src="img/image8.png" width="500" >
 

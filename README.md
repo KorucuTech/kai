@@ -48,7 +48,7 @@ After you create CREW,AGENT,TASK,TOOL definitions you can run the crew with inpu
 ```
 import frappe
 
-crew_name = "My Expert Crew"
+crew_name = "My Science Crew"
 crew = frappe.get_doc("KAI Crew",crew_name)
 
 inputs = { "question": "Why is the sky Blue" }

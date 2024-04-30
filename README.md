@@ -109,6 +109,8 @@ Here is the backend of this TOOL!
 
 <img src="img/image9.png" width="500" >
 
+Hard part of this is writing/testing/re-writing the "prompts" so that AGNETS can produce the result you want.
+
 Let me know what you think!
 
 ### LICENSE

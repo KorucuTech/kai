@@ -43,6 +43,9 @@ bench get-app https://github.com/KorucuTech/kai.git
 bench --site your-site-name install kai
 ```
 
+
+<img src="img/image.png" width="400" >
+
 ### HOW TO RUN
 After you create CREW,AGENT,TASK,TOOL definitions you can run the crew with input to get an output.
 ```

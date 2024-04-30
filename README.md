@@ -16,4 +16,4 @@ Create a KAI Job and enter your JSON data in to "Inputs" field then click "Run".
 Call the "run" method in api.py file.
 
 3. Via Code --
-
+ 

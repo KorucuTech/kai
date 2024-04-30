@@ -56,6 +56,18 @@ output = crew.kickoff(inputs=inputs)
 print(output)
 ```
 
+How about this to verify if a user exists in Frappe and is Authorized.
+
+```
+import frappe
+
+crew_name = "My Security Crew"
+crew = frappe.get_doc("KAI Crew",crew_name)
+
+inputs = { "email": "me@here.com" }
+output = crew.kickoff(inputs=inputs)
+print(output)
+```
 ### LICENSE
 
 MIT

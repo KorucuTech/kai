@@ -9,7 +9,7 @@ If you are not familiar with these platforms please take a look at the following
 
 #### License
 
-mit
+MIT
 
 ## How to Run
 

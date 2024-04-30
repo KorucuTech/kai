@@ -76,7 +76,7 @@ You can also run a crew from a JOB
 
 <img src="img/image2.png" width="500" >
 
-This is the AGENT that answer the question.
+This is the AGENT that answered the question.
 
 <img src="img/image3.png" width="500" >
 
@@ -84,11 +84,11 @@ This was the TASK at hand.
 
 <img src="img/image5.png" width="500" >
 
-Agent decides if it needs to use a tool complete a TASK. Here is a TOOL definition.
+Agent decides if it needs to use a tool to complete a TASK. Here is a TOOL definition.
 
 <img src="img/image6.png" width="500" >
 
-And here is the CREW that has only one AGENT that worked on the answer.
+And here is the very simple CREW that has only one AGENT that worked on the answer.
 
 <img src="img/image4.png" width="500" >
 
@@ -97,7 +97,7 @@ You must have an LLM setup to begin with.
 <img src="img/image7.png" width="500" >
 
 Technically you can write these CREWS,AGENTS,TASKS etc. in pure python.
-KAI gives you a way to do it via frappe UI and use them directly from any frappe app or server script.
+KAI gives you a way to do it via frappe UI and use/call them directly from any frappe app or server script.
 
 Let me know what you think!
 

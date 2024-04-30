@@ -1,6 +1,6 @@
 ## KAI
 
-KAI
+KAI is a custom app for Frappe Framework that implements CrewAI framework to integrate AI Agents with Frappe Framework.
 
 #### License
 

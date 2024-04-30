@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-16 12:52:23.152829",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "llm",
+  "system_prompt",
+  "section_break_xulr",
+  "agent_instruction_prompt",
+  "column_break_zcit",
+  "user_request",
+  "send_request",
+  "column_break_qxgc",
+  "system_response",
+  "clear_response"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "system_prompt",
+   "fieldtype": "Long Text",
+   "label": "System Prompt"
+  },
+  {
+   "depends_on": "enabled",
+   "fieldname": "section_break_xulr",
+   "fieldtype": "Section Break",
+   "label": "TEST CONSOLE"
+  },
+  {
+   "fieldname": "user_request",
+   "fieldtype": "Long Text",
+   "label": "User Request"
+  },
+  {
+   "fieldname": "system_response",
+   "fieldtype": "Long Text",
+   "label": "System Response"
+  },
+  {
+   "fieldname": "column_break_zcit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_request",
+   "fieldtype": "Button",
+   "label": "Send Request"
+  },
+  {
+   "fieldname": "clear_response",
+   "fieldtype": "Button",
+   "label": "Clear Response"
+  },
+  {
+   "fieldname": "agent_instruction_prompt",
+   "fieldtype": "Long Text",
+   "label": "Agent Instruction Prompt"
+  },
+  {
+   "fieldname": "column_break_qxgc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "llm",
+   "fieldtype": "Link",
+   "label": "LLM",
+   "options": "KAI LLM"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-19 12:10:26.596738",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-04-19 09:57:22.465011",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agent",
+  "description",
+  "expected_output",
+  "tools",
+  "context"
+ ],
+ "fields": [
+  {
+   "description": "A clear, concise statement of what the task entails.",
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "description": "The agent responsible for the task, assigned either directly or by the crew's process.",
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "KAI Agent"
+  },
+  {
+   "description": "A detailed description of what the task's completion looks like.",
+   "fieldname": "expected_output",
+   "fieldtype": "Text",
+   "label": "Expected Output"
+  },
+  {
+   "description": "The functions or capabilities the agent can utilize to perform the task.",
+   "fieldname": "tools",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tools",
+   "options": "KAI Task Tool"
+  },
+  {
+   "description": "Specifies tasks whose outputs are used as context for this task.",
+   "fieldname": "context",
+   "fieldtype": "Table MultiSelect",
+   "label": "Context",
+   "options": "KAI Task Context Task"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-20 07:25:17.682790",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Task",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

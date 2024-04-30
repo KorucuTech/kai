@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-19 11:32:39.615499",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agent"
+ ],
+ "fields": [
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agent",
+   "options": "KAI Agent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-20 10:00:21.414084",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Crew Agent",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

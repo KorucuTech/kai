@@ -1,0 +1,64 @@
+{
+ "actions": [
+  {
+   "action": "kai.api.run",
+   "action_type": "Server Action",
+   "label": "Run"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "format:KAI-{##########}",
+ "creation": "2024-04-20 07:12:44.291173",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crew",
+  "inputs",
+  "output"
+ ],
+ "fields": [
+  {
+   "fieldname": "crew",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crew",
+   "options": "KAI Crew",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inputs",
+   "fieldtype": "JSON",
+   "label": "Inputs"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Text",
+   "label": "Output"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-21 12:33:08.773100",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Job",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

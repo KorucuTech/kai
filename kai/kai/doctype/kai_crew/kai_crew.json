@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-04-19 09:57:48.858463",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agents",
+  "tasks",
+  "process_flow",
+  "verbose",
+  "manager_llm",
+  "function_calling_llm",
+  "max_rpm",
+  "full_output",
+  "memory"
+ ],
+ "fields": [
+  {
+   "description": "A list of agents that are part of the crew.",
+   "fieldname": "agents",
+   "fieldtype": "Table MultiSelect",
+   "label": "Agents",
+   "options": "KAI Crew Agent"
+  },
+  {
+   "description": "A list of tasks assigned to the crew.",
+   "fieldname": "tasks",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tasks",
+   "options": "KAI Crew Task"
+  },
+  {
+   "description": "The process flow the crew follows.",
+   "fieldname": "process_flow",
+   "fieldtype": "Select",
+   "label": "Process Flow",
+   "options": "sequential\nhierarchical\nconsensual"
+  },
+  {
+   "default": "0",
+   "description": "The verbosity level for logging during execution.",
+   "fieldname": "verbose",
+   "fieldtype": "Int",
+   "label": "Verbose",
+   "non_negative": 1
+  },
+  {
+   "description": "The language model used by the manager agent in a hierarchical process. Required when using a hierarchical process.",
+   "fieldname": "manager_llm",
+   "fieldtype": "Link",
+   "label": "Manager LLM",
+   "options": "KAI LLM"
+  },
+  {
+   "description": "If set, the crew will use this LLM to do function calling for tools for all agents in the crew. Each agent can have its own LLM, which overrides the crew's LLM for function calling.",
+   "fieldname": "function_calling_llm",
+   "fieldtype": "Link",
+   "label": "Function Calling LLM",
+   "options": "KAI LLM"
+  },
+  {
+   "default": "600",
+   "description": "Maximum requests per minute the crew adheres to during execution.",
+   "fieldname": "max_rpm",
+   "fieldtype": "Int",
+   "label": "Max RPM",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "description": "Whether the crew should return the full output with all tasks outputs or just the final output.",
+   "fieldname": "full_output",
+   "fieldtype": "Check",
+   "label": "Full Output"
+  },
+  {
+   "description": "Utilized for storing execution memories.",
+   "fieldname": "memory",
+   "fieldtype": "Select",
+   "label": "Memory",
+   "options": "\nshort-term\nlong-term\nentity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "KAI Agent",
+   "link_fieldname": "name"
+  },
+  {
+   "link_doctype": "KAI LLM",
+   "link_fieldname": "name"
+  },
+  {
+   "link_doctype": "KAI Task",
+   "link_fieldname": "name"
+  }
+ ],
+ "modified": "2024-04-20 16:35:17.648669",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Crew",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

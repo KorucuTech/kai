@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-19 11:23:09.629597",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tool"
+ ],
+ "fields": [
+  {
+   "fieldname": "tool",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tool",
+   "options": "KAI Tool"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-23 12:54:02.388006",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Task Tool",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

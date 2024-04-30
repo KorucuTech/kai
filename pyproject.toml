@@ -9,6 +9,10 @@ readme = "README.md"
 dynamic = ["version"]
 dependencies = [
     # "frappe~=15.0.0" # Installed and managed by bench.
+    "ollama~=0.1.8"
+    "distro~=1.9.0"
+    "openai~=1.20.0"
+    "tqdm~=4.66.2"
 ]
 
 [build-system]
@@ -18,3 +22,5 @@ build-backend = "flit_core.buildapi"
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
 # package_name = "~=1.1.0"
+ollama = "~=0.1.8"
+distro = "~=1.9.0" 

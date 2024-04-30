@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-04-19 09:56:42.207978",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "role",
+  "goal",
+  "backstory",
+  "tools",
+  "llm",
+  "function_calling_llm",
+  "max_iterations",
+  "max_rpm",
+  "max_execution_time",
+  "verbose",
+  "allow_delegation"
+ ],
+ "fields": [
+  {
+   "description": "Defines the agent's function within the crew. It determines the kind of tasks the agent is best suited for.",
+   "fieldname": "role",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Role",
+   "reqd": 1
+  },
+  {
+   "description": "The individual objective that the agent aims to achieve. It guides the agent's decision-making process.",
+   "fieldname": "goal",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Goal",
+   "reqd": 1
+  },
+  {
+   "description": "Provides context to the agent's role and goal, enriching the interaction and collaboration dynamics.",
+   "fieldname": "backstory",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Backstory",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "(OPTIONAL) Setting this to True configures the internal logger to provide detailed execution logs, aiding in debugging and monitoring.",
+   "fieldname": "verbose",
+   "fieldtype": "Check",
+   "label": "Verbose"
+  },
+  {
+   "default": "1",
+   "description": "(OPTIONAL) Agents can delegate tasks or questions to one another, ensuring that each task is handled by the most suitable agent.",
+   "fieldname": "allow_delegation",
+   "fieldtype": "Check",
+   "label": "Allow Delegation"
+  },
+  {
+   "default": "600",
+   "description": "(OPTIONAL) Maximum execution time for an agent to execute a task (seconds)",
+   "fieldname": "max_execution_time",
+   "fieldtype": "Int",
+   "label": "Max Execution Time",
+   "non_negative": 1
+  },
+  {
+   "description": "(OPTIONAL) Set of capabilities or functions that the agent can use to perform tasks.",
+   "fieldname": "tools",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tools",
+   "options": "KAI Agent Tool"
+  },
+  {
+   "description": "(OPTIONAL) Language model that will run the agent.",
+   "fieldname": "llm",
+   "fieldtype": "Link",
+   "label": "LLM",
+   "options": "KAI LLM"
+  },
+  {
+   "description": "(OPTIONAL) Specifies the language model that will handle the tool calling for this agent, overriding the crew function calling LLM if set.",
+   "fieldname": "function_calling_llm",
+   "fieldtype": "Link",
+   "label": "Function Calling LLM",
+   "options": "KAI LLM"
+  },
+  {
+   "default": "25",
+   "description": "(OPTIONAL) The maximum number of iterations the agent can perform before being forced to give its best answer.",
+   "fieldname": "max_iterations",
+   "fieldtype": "Int",
+   "label": "Max Iterations",
+   "non_negative": 1
+  },
+  {
+   "default": "600",
+   "description": "(OPTIONAL) The maximum number of requests per minute the agent can perform to avoid rate limits.",
+   "fieldname": "max_rpm",
+   "fieldtype": "Int",
+   "label": "Max RPM",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-29 21:15:36.532166",
+ "modified_by": "Administrator",
+ "module": "KAI",
+ "name": "KAI Agent",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

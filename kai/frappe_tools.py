@@ -7,9 +7,6 @@ def GetTool(function_name,tool_config):
     if function_name=="GetFrappeUserTool":
         return GetFrappeUserTool
 
-
-
-
 @tool("GetFrappeUserTool")
 def GetFrappeUserTool(email):
     """Given a user email address as input this tool returns detailed information about the user as output."""

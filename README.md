@@ -99,6 +99,16 @@ You must have an LLM setup to begin with.
 Technically you can write these CREWS,AGENTS,TASKS etc. in pure python.
 KAI gives you a way to do it via frappe UI and use/call them directly from any frappe app or server script.
 
+It is possible to add more TOOLS to do much more with Frappe or even ERPNext.
+
+Here is a simple TOOL that checks if a user exists given an email address.
+
+<img src="img/image8.png" width="500" >
+
+Here is the backend of this TOOL!
+
+<img src="img/image9.png" width="500" >
+
 Let me know what you think!
 
 ### LICENSE
